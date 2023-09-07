@@ -9,12 +9,14 @@ import {
 } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { ProductsDTO } from './products.dto';
+import { ApiBody } from '@nestjs/swagger';
 
 @Controller('products')
 export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
   @Post()
+  @ApiBody({ type: ProductsDTO })
   create(@Body() data: ProductsDTO) {
     return this.productsService.create(data);
   }
