@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma/prisma.service';
 import { ProductsDTO } from './products.dto';
 
 @Injectable()
@@ -47,7 +47,7 @@ export class ProductsService {
     });
   }
 
-  async delete(id: string) {
+  async delete(id: string): Promise<any> {
     const productExists = await this.prismaService.products.findUnique({
       where: {
         id,
