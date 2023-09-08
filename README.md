@@ -57,3 +57,11 @@ Para executar os teste unitários, execute o comando:
 ```bash
 $ npm run test
 ```
+
+## Api DOCS
+
+Acesse o caminho abaixo para ter acesso a documentação (Swagger) da aplicação
+
+```bash
+http://localhost:3000/api
+```
