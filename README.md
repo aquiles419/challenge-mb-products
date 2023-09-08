@@ -24,7 +24,7 @@
 
 ## Descrição
 
-Esse é o desafio 2 de NestJs da imersão fullcycle.
+Desafio MB-Technology - Microserviço de Produtos
 
 ## Instalação
 
@@ -36,6 +36,8 @@ Selecione a opção : Reabrir no container
 
 Selecione a opção : usar docker-compose.yaml
 
+Instale as dependencia caso necessário
+
 ## Execute a app
 
 ```bash
@@ -44,56 +46,10 @@ $ npm run start:dev
 
 A aplicação está rodando na porta 3000
 
-## Rotas da App
+## Testes
 
-### GET - /assets
-
-Lista todas as assets existentes no banco
+Para executar os teste unitários, execute o comando:
 
 ```bash
-http://localhost:3000/assets
-```
-
-### POST - /assets
-
-Cria uma nova assets
-
-```bash
-http://localhost:3000/assets
-```
-
-Exemplo da Requisição:
-
-```bash
-{
-	"id": "assets1",
-	"symbol": "symbol1"
-}
-```
-
----
-
-### GET - /orders
-
-Lista todas as orders existentes no banco
-
-```bash
-http://localhost:3000/orders
-```
-
-### POST - /orders
-
-Cria uma nova orders
-
-```bash
-http://localhost:3000/orders
-```
-
-Exemplo da Requisição:
-
-```bash
-{
-  "asset_id": "orders1",
-  "price": 10.99
-}
+$ npm run test
 ```
