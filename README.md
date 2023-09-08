@@ -36,7 +36,11 @@ Selecione a opção : Reabrir no container
 
 Selecione a opção : usar docker-compose.yaml
 
-Instale as dependencia caso necessário
+Instale as dependência caso necessário :
+
+```bash
+$ npm install
+```
 
 ## Execute a app
 
